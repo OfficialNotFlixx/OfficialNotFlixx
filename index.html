@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
+    <title>Hypixel SkyBlock Encyclopedia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,46 +13,127 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #35424a;
-            color: white;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 1rem;
         }
-        main {
-            padding: 2rem;
-            max-width: 800px;
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
             margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
-        footer {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Hypixel SkyBlock Encyclopedia</h1>
     </header>
-    
-    <main>
-        <h2>About Me</h2>
-        <p>This is a basic website to introduce myself and share some information.</p>
-        
-        <h2>My Interests</h2>
+    <nav>
         <ul>
-            <li>Web Development</li>
-            <li>Reading</li>
-            <li>Hiking</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#items">Items</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#islands">Islands</a></li>
+            <li><a href="#dungeons">Dungeons</a></li>
         </ul>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 My Basic Website. All rights reserved.</p>
-    </footer>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Welcome to Hypixel SkyBlock</h2>
+            <p>Explore the vast world of Hypixel SkyBlock, collect rare items, level up your skills, and conquer challenging dungeons!</p>
+            <a href="https://hypixel-skyblock.fandom.com/wiki/Hypixel_SkyBlock_Wiki" class="button" target="_blank">Official Wiki</a>
+        </section>
+        <section id="items" class="section">
+            <h2>SkyBlock Items</h2>
+            <p>Discover a wide array of unique items in Hypixel SkyBlock:</p>
+            <ul>
+                <li>Aspect of the Dragons</li>
+                <li>Hyperion</li>
+                <li>Superior Dragon Armor</li>
+                <li>Midas Staff</li>
+            </ul>
+            <a href="#" class="button" onclick="showItemDetails()">View Item Details</a>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>Master various skills to progress in SkyBlock:</p>
+            <ul>
+                <li>Combat</li>
+                <li>Mining</li>
+                <li>Farming</li>
+                <li>Foraging</li>
+                <li>Fishing</li>
+            </ul>
+            <a href="#" class="button" onclick="showSkillGuides()">Skill Guides</a>
+        </section>
+        <section id="islands" class="section">
+            <h2>Islands</h2>
+            <p>Explore diverse islands in the SkyBlock universe:</p>
+            <ul>
+                <li>Hub Island</li>
+                <li>The End</li>
+                <li>Crimson Isle</li>
+                <li>Spider's Den</li>
+            </ul>
+            <a href="#" class="button" onclick="showIslandMap()">Island Map</a>
+        </section>
+        <section id="dungeons" class="section">
+            <h2>Dungeons</h2>
+            <p>Challenge yourself in the Catacombs:</p>
+            <ul>
+                <li>Entrance</li>
+                <li>Floor 1-7</li>
+                <li>Master Mode</li>
+            </ul>
+            <a href="#" class="button" onclick="showDungeonGuide()">Dungeon Guide</a>
+        </section>
+    </div>
+    <script>
+        function showItemDetails() {
+            alert("Item details page is under construction. Check back soon!");
+        }
+        function showSkillGuides() {
+            alert("Skill guides are being updated. Please visit the official wiki for now.");
+        }
+        function showIslandMap() {
+            alert("Interactive island map coming soon!");
+        }
+        function showDungeonGuide() {
+            alert("Comprehensive dungeon guide is in development. Stay tuned!");
+        }
+    </script>
 </body>
 </html>
