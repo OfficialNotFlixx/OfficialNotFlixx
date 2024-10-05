@@ -86,15 +86,10 @@
             const user = users.find(u => u.username === username && u.password === password);
 
             if (user) {
-                if (user.isAdmin) {
-                    window.location.href = 'admin.html';
-                } else if (user.role === 'owner') {
-                    window.location.href = 'owner_dashboard.html';
-                } else if (user.role === 'manager') {
-                    window.location.href = 'manager_dashboard.html';
-                } else {
-                    window.location.href = 'employee_dashboard.html';
-                }
+                // Store the logged-in user information
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                // Redirect to the shift management page
+                window.location.href = 'shift_management.html';
             } else {
                 alert('Invalid username or password');
             }
